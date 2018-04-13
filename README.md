@@ -21,3 +21,8 @@ TODO Screenshot
 * Can be enabled only on work machine
 
 TODO Screenshot
+
+## GitHub Notification
+
+* Modified from [this plugin](https://raw.githubusercontent.com/matryer/bitbar-plugins/master/Dev/GitHub/notifications.30s.py) to work with Python 3
+* Everything else is pretty much the same
