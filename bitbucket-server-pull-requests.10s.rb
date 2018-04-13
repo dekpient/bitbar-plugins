@@ -10,6 +10,7 @@
 
 # CONFIG
 # Only runs on the work machine based on configured hostname
+# Also check and fix the shebang. It supports multiple machines with different users e.g. work and home that use rbenv
 
 WORK_HOSTNAME='worklaptop'
 
