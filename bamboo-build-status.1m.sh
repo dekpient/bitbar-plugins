@@ -49,7 +49,7 @@ do
 		BITBAR_LINES+=("♻︎ Building $shortName... | href=$SERVER/browse/$plan color=orange")
 	else
 		state=$(echo "$buildResult" | $JQPATH -r '.state')
-		if [ $state = "Successful" ]
+		if [ "$state" = "Successful" ]
 		then
 			icon="✔"︎
 			color="green"
@@ -63,7 +63,7 @@ do
 	fi
 done
 
-[ $FAILED = "true" ] && echo '◉ | color=red' || echo '◉ | color=green'
+[ "$FAILED" = "true" ] && echo '◉ | color=red' || echo '◉ | color=green'
 echo ---
 for line in "${BITBAR_LINES[@]}"; do echo $line; done
 echo ---
